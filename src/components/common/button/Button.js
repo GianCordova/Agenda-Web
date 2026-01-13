@@ -1,7 +1,6 @@
 let Button = (title, id, img) => {
     let div = document.createElement("div");
     div.id = id;
-    div.className = "button";
 
     let divImage = document.createElement("div");
     divImage.className = "button-image";

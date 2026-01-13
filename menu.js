@@ -12,6 +12,8 @@ let menu = function () {
     div.appendChild(div2);
     div2.className = "div-hijo-menor";
 
+    root.appendChild(div);
+
     return div;
 }
 

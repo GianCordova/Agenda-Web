@@ -1,8 +1,10 @@
 let login = function () {
 
-    let login = document/createElement("section");
+    let login = document.createElement("section");
+    login.className = "login-container";
 
-    let h3 = createElement(h3);
+    let h3 = document.createElement("h3");
+    h3.className = "login-tile";
     h3.innerHTML = "Login";
 
     let user = document.createElement("input");

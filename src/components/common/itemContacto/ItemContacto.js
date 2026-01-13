@@ -3,7 +3,7 @@ let ItemContacto = (imgContacto, nombre, telefono) => {
     div.className = "item-contacto";
 
     let etiquetaImg = document.createElement("img");
-    img.src = `./assets/icons/${imgContacto}`;
+    etiquetaImg.src = `./assets/icons/${imgContacto}`;
 
     let etiquetaNombre = document.createElement("p");
     etiquetaNombre.textContent = nombre;

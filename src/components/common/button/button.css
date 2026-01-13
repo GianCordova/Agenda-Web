@@ -1,0 +1,33 @@
+/* Estilo para el contenedor del botón */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 10px; /* Espacio entre el icono y el texto */
+    transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(207, 17, 17);
+    text-decoration: none;
+}
+
+/* Efecto hover */
+.button:hover {
+    background-color: #357abd;
+}
+
+/* Estilo del icono */
+.button-image img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* Estilo del texto */
+.button-text {
+    font-size: 16px;
+    font-weight: 600;
+}

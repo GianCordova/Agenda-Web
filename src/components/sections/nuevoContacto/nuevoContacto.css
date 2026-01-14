@@ -1,0 +1,76 @@
+/* Contenedor principal */
+.nuevo-contacto {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Título */
+.nuevo-contacto h2 {
+    margin: 0;
+    padding-bottom: 6px;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Formulario */
+.form-nuevo-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Inputs */
+.form-nuevo-contacto input {
+    padding: 10px;
+    font-size: 1rem;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-nuevo-contacto input:focus {
+    border-color: #4a90e2;
+}
+
+/* Botón */
+.form-nuevo-contacto button {
+    padding: 10px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #4a90e2;
+    color: #fff;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-nuevo-contacto button:hover {
+    background-color: #357ab8;
+}
+
+/* Preview del contacto */
+.preview-contacto {
+    margin-top: 5px;
+}
+
+/* Ajuste visual del ItemContacto dentro del preview */
+.preview-contacto .item-contacto {
+    background-color: #f5faff;
+    border: 1px solid #d0e4ff;
+}

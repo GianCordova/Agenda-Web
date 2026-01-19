@@ -1,5 +1,5 @@
-import { Contactos } from "../../sections/contactos/Contactos";
-import { NuevoContacto } from "../../sections/nuevoContacto/NuevoContacto";
+import { Contactos } from "../../sections/contactos/Contactos.js";
+import { NuevoContacto } from "../../sections/nuevoContacto/NuevoContacto.js";
 
 let container = document.getElementById("container")
 

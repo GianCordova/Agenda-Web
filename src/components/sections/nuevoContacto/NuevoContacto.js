@@ -1,5 +1,5 @@
-import { ItemContacto } from "../../common/itemContacto/ItemContacto.js";
 import { ContactList } from "../contactos/db.js";
+import { saveContactsToStorage } from "../contactos/localStorage/storage.js";
 
 let NuevoContacto = () => {
     let section = document.createElement("section");
@@ -45,17 +45,23 @@ let NuevoContacto = () => {
     //Programacion del formulario
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
+    e.preventDefault();
 
-        let contacto = {
-            nombre: inputNombre.value,
-            telefono: inputTelefono.value
-        };
-        
-        console.log(contacto);
-        ContactList.push(contacto);
-        
-    })
+    let contacto = {
+        nombre: inputNombre.value,
+        telefono: inputTelefono.value
+    };
+
+    ContactList.push(contacto);
+
+    saveContactsToStorage(ContactList);
+
+    console.log("Contacto guardado en el LocalStorage");
+    console.log(contacto);
+
+    inputNombre.value = "";
+    inputTelefono.value = "";
+});
 
 
     return section;

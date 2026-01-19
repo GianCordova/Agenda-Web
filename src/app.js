@@ -12,11 +12,13 @@ nav.appendChild(Button(
     "Agenda",
     "agenda", 
     "user.svg",
+    viewContacts
 ));
 nav.appendChild(Button(
     "Crear contacto", 
     "plus", 
     "new.svg",
+    viewNuevoContacto
 ));
 nav.appendChild(Button("ToDoList", "todoList", "agenda.svg"));
 nav.appendChild(Button("Crear Tarea", "plus", "new.svg"));

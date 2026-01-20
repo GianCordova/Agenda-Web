@@ -6,18 +6,30 @@
 
 #app {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; 
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 10px;
+    background-color: #f4f4f4;
 }
 
 #nav {
-    height: 100vh;
+    min-height: 100vh; 
+    height: auto;      
     border: 1px solid #000;
+    background-color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px; 
 }
 
 #container {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     border: 1px solid #000;
+    background-color: #fff;
+    padding: 20px;
 }

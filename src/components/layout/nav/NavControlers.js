@@ -1,7 +1,7 @@
 import { Contactos } from "../../sections/contactos/Contactos.js";
 import { NuevoContacto } from "../../sections/nuevoContacto/NuevoContacto.js";
 import { ToDoList } from "../../sections/toDoList/ToDoList.js";
-import { NuevaTarea } from "../../sections/nuevatarea/nuevaTarea.js";
+import { NuevaTarea } from "../../sections/nuevaTarea/nuevaTarea.js";
 
 
 let container = document.getElementById("container")

@@ -1,0 +1,19 @@
+.btn-eliminar {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 5px;
+    transition: transform 0.2s ease;
+    filter: grayscale(1);
+}
+
+.btn-eliminar:hover {
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.item-todolist p:last-of-type {
+    margin-right: 10px;
+}

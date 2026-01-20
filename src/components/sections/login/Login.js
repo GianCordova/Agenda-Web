@@ -18,6 +18,14 @@ let login = function () {
     let button = document.createElement("button");
     button.innerHTML = "Iniciar Sesion";
 
+    button.addEventListener("click", () => {
+        if (user.value.trim() !== "" && password.value.trim() !== "") {
+            window.location.href = "./src/app.html"; 
+        } else {
+            alert("Ingresa un usuario y una contraseña para continuar.");
+        }
+    });
+
     login.appendChild(h3);
     login.appendChild(user);
     login.appendChild(password);

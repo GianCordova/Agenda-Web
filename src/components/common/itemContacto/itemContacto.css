@@ -6,7 +6,23 @@
 
     width: 100%;
     display: grid;
-    grid-template-columns: 1rf 2rf 1fr;
+    /* CORREGIDO: fr en lugar de rf */
+    grid-template-columns: 1fr 2fr 1fr; 
     gap: 1rem;
     padding: 0.5rem;
+    
+    /* ESTO ES VITAL PARA EL CLIC */
+    cursor: pointer; 
+    transition: background-color 0.2s;
+    user-select: none; /* Evita que se seleccione el texto al hacer clic */
+}
+
+/* Efecto visual para saber que sí estás haciendo clic */
+.item-contacto:hover {
+    background-color: #f0f0f0;
+}
+
+.item-contacto:active {
+    background-color: #e0e0e0;
+    transform: scale(0.98); /* Se hunde un poquito al tocarlo */
 }

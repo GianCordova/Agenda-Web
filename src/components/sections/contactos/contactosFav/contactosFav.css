@@ -1,0 +1,23 @@
+.item-contacto {
+    position: relative;
+    /* Ajusta tu grid para que quepa la estrella al final */
+    grid-template-columns: 1fr 2fr 1fr 0.5fr; 
+    align-items: center;
+}
+
+.btn-favorito {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc; /* Color gris por defecto */
+    transition: transform 0.2s, color 0.2s;
+}
+
+.btn-favorito.es-favorito {
+    color: #f1c40f; /* Color amarillo oro */
+}
+
+.btn-favorito:hover {
+    transform: scale(1.2);
+}

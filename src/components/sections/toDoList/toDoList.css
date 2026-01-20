@@ -1,0 +1,94 @@
+/* Contenedor principal de la sección */
+.todolist {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.todolist h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Estilo de cada fila/item de tarea */
+.item-todolist {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 5px solid #ccc; /* Color por defecto */
+    transition: transform 0.2s ease;
+}
+
+.item-todolist:hover {
+    transform: translateX(5px);
+    background-color: #f1f3f5;
+}
+
+/* Imagen/Icono */
+.item-todolist img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    filter: opacity(0.7);
+}
+
+/* Nombre de la tarea */
+.item-todolist p:nth-child(2) {
+    flex-grow: 1; /* Hace que el nombre ocupe el espacio medio */
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+/* Estilo del Estado (el texto de pendiente/urgente) */
+.item-todolist p:last-child {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+/* --- Colores dinámicos según el texto del estado --- */
+
+/* Si el texto es 'urgente' */
+.item-todolist:has(p:contains("urgente")), /* Solo funciona en navegadores modernos */
+.item-todolist {
+    /* Como el JS no añade clases dinámicas, podemos usar selectores de atributo o estilos generales */
+}
+
+/* Tip: Para que el CSS detecte el estado, lo ideal es que el JS añada una clase. 
+   Pero con este estilo general se verá muy bien: */
+
+.item-todolist p:last-child {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+/* Si quieres que se vea rojo si es urgente, añade esto en tu itemToDoList.js:
+   etiquetaEstado.className = estado; 
+   Y usa estos estilos: */
+
+.item-todolist .urgente {
+    background-color: #ffe3e3;
+    color: #fa5252;
+    border: 1px solid #ffa8a8;
+}
+
+.item-todolist .pendiente {
+    background-color: #fff4e6;
+    color: #fd7e14;
+    border: 1px solid #ffd8a8;
+}

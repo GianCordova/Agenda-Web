@@ -1,0 +1,75 @@
+/* Contenedor principal */
+.nueva-tarea {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nueva-tarea h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos del Formulario */
+.form-nueva-tarea {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre inputs */
+}
+
+.form-nueva-tarea input, 
+.form-nueva-tarea select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto al hacer clic en los inputs */
+.form-nueva-tarea input:focus, 
+.form-nueva-tarea select:focus {
+    border-color: #007bff;
+}
+
+/* Estilo del Botón */
+.form-nueva-tarea button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-nueva-tarea button:hover {
+    background-color: #218838;
+}
+
+/* Contenedor de Preview (opcional por si quieres mostrar algo debajo) */
+.preview-tarea {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+    font-style: italic;
+    color: #666;
+}
+
+/* Estilo para las opciones del select (algunos navegadores lo permiten) */
+option[value="urgente"] {
+    color: #d9534f; /* Rojo */
+    font-weight: bold;
+}
+
+option[value="pendiente"] {
+    color: #f0ad4e; /* Naranja */
+}
